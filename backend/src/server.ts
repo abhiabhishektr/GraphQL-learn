@@ -18,8 +18,8 @@ const server = new ApolloServer({
     },
 });
 
-// const app = express() as any;
-const app = express() 
+const app = express() as any;
+// const app = express() 
 
 server.start().then(() => {
     server.applyMiddleware({ app });
@@ -27,3 +27,4 @@ server.start().then(() => {
         console.log(`Server ready at http://localhost:4000${server.graphqlPath}`)
     );
 });
+//  "@types/express": "4.17.11",
